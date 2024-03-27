@@ -1,0 +1,20 @@
+serti :
+
+herf sayisi 5 den boyuk olanlari cap et
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String [] names = {"cingiz", "amal", "valide", "eli", "nicat", "mehemmed"};
+        
+        for (String name : names){
+            if (name.length()>5){
+        
+        System.out.println(name);
+            }
+            
+        }
+    }
+}
