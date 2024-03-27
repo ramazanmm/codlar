@@ -1,0 +1,43 @@
+serti :
+
+
+100 -ə qədər fibonaççi ədədlərini tapan və hər birini tapdiqca rəqəmlərinin cəmini hesaplayan və ən sonda alınan rəqəmin sadəmi yoxsa mürəkkəbmi olduğunu yazdırın
+
+
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int x =0;
+        int y =1;
+        int limit =10;
+        int fibonacci =0;
+        int toplamF =0;
+        
+        while (fibonacci < limit){
+            fibonacci = x+y;
+            System.out.println(fibonacci);
+            x=y;
+            y=fibonacci;
+            toplamF += fibonacci;
+        }
+        System.out.println("toplam fibonacci "+ toplamF);
+        
+        int bolen =1;
+        int bolenSayi =0;
+        
+        while (toplamF >= bolen){
+            if (toplamF % bolen ==0){
+                bolenSayi++;
+            }
+            bolen++;
+        }
+        if (bolenSayi>2){
+            System.out.println("murekkeb");
+        }else {
+            System.out.println("sade");
+        }
+    }
+}
