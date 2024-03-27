@@ -1,0 +1,32 @@
+serti:
+
+verilmis ededler siyahisinda reqemlerin sayi 2 den boyuk olan ededlerin cemini tap
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int ages[] = {23,104,54,406};
+        int reqemSayi = 0;
+        int sonReqem;
+        int cem = 0;
+        
+        for (var i = 0; i<ages.length; i++){
+            while (ages[i]>0){
+            sonReqem = ages [i] % 10;
+            cem += sonReqem;
+            reqemSayi++;
+            ages[i] /= 10;
+            
+            }
+            if (reqemSayi > 2){
+                System.out.println(cem);
+            }
+            cem =0;
+            reqemSayi=0;
+    
+        }
+        
+    }
+}
