@@ -1,0 +1,20 @@
+serti :
+
+ededlerin en boyuyunu tap
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int [] ages = {25,2,55,78};
+        int enBoyuk = ages[0];
+        for (var a = 0; a<ages.length; a++){
+            if (ages[a] > enBoyuk){
+                enBoyuk = ages[a];
+            
+            }
+       
+        }
+        System.out.println("enBoyuk " + enBoyuk);
+    }
+}
