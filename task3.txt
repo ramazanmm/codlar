@@ -1,0 +1,20 @@
+serti :
+
+ededlerin tek ve ya cut oldugunu cap et
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        byte [] ages = {25,35,22};
+        for (var i = 0; i<ages.length; i++){
+            if (ages[i] % 2 ==0){
+                System.out.println("cut");
+            }else {
+                System.out.println("tek");
+            }
+        }
+        System.out.println();
+    }
+}
