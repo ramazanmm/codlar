@@ -1,0 +1,24 @@
+serti:
+
+Verilen arrayin elementlerinin sorted (kicikden boyuye dogru) olub olmadigini cap edin. Meselen: [1,2,3,5] -> Sorted
+     [1,3,5,4] -> Unsorted
+
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int ages [] = {4,8,11,3};
+        int enKicik = ages[0];
+        
+        for (var i = 1; i < ages.length; i++){
+            if (enKicik < ages[i]){
+                System.out.println("siralama duzdur");
+                }else {
+                    System.out.println("siralama sefdir");
+                }
+            }
+        }
+        
+    }
