@@ -7,21 +7,22 @@ Verilmis ededler siyahisindaki reqemlerinin cemi tek olan ededlerin ededi oratsi
 
 class HelloWorld {
     public static void main(String[] args) {
-        int [] ages = {23,15,12,11};
+        int [] ages = {23,15,12,11,1};
         int cem = 0;
         int count = 0;
         int sonReqem;
         int toplam = 0;
-        
+        int value;
         for (var i =0; i<ages.length; i++){
-            while (ages[i] > 0){
-                sonReqem = ages[i] % 10;
+            value = ages[i];
+            while (value > 0){
+                sonReqem = value % 10;
                 cem += sonReqem;
-                ages[i] /= 10;
+                value /= 10;
             }
             if (cem % 2 ==1){
                 count++;
-                toplam += cem;
+                toplam += ages[i];
                 
             }
             cem = 0;

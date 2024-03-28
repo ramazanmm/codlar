@@ -1,4 +1,4 @@
-serti:
+serti:  BITMEYIB
 
 Verilen arrayin elementlerinin sorted (kicikden boyuye dogru) olub olmadigini cap edin. Meselen: [1,2,3,5] -> Sorted
      [1,3,5,4] -> Unsorted
@@ -11,14 +11,15 @@ class HelloWorld {
     public static void main(String[] args) {
         int ages [] = {4,8,11,3};
         int enKicik = ages[0];
+        int sonReqem ;
         
-        for (var i = 1; i < ages.length; i++){
-            if (enKicik < ages[i]){
-                System.out.println("siralama duzdur");
-                }else {
-                    System.out.println("siralama sefdir");
+        for (var i = 0; i < ages.length; i++){
+            while (ages[i]>0){
+                sonReqem = ages[i] % 10;
+                ages[i] /= 10;
+                }
+                
                 }
             }
         }
-        
-    }
+      } 
