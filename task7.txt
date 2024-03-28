@@ -1,0 +1,32 @@
+serti :
+
+Verilmis ededler siyahisindaki reqemlerinin cemi tek olan ededlerin ededi oratsini tapan alqoritm
+
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int [] ages = {23,15,12,11};
+        int cem = 0;
+        int count = 0;
+        int sonReqem;
+        int toplam = 0;
+        
+        for (var i =0; i<ages.length; i++){
+            while (ages[i] > 0){
+                sonReqem = ages[i] % 10;
+                cem += sonReqem;
+                ages[i] /= 10;
+            }
+            if (cem % 2 ==1){
+                count++;
+                toplam += cem;
+                
+            }
+            cem = 0;
+        }
+        
+        System.out.println("ededi orta " + toplam/count);
+    }
+}
