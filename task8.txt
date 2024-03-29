@@ -12,14 +12,17 @@ class HelloWorld {
         int ages [] = {4,8,11,3};
         int enKicik = ages[0];
         int sonReqem ;
+        int value;
         
         for (var i = 0; i < ages.length; i++){
-            while (ages[i]>0){
-                sonReqem = ages[i] % 10;
-                ages[i] /= 10;
+            value = ages[i];
+            while (value>0){
+                sonReqem = value % 10;
+                value /= 10;
                 }
-                
-                }
+                if (enKicik > ages[i]){
+                System.out.println("siralama sefdir");
+               }
             }
         }
-      } 
+    }
