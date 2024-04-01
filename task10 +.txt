@@ -1,0 +1,30 @@
+serti :  BITMIYIB
+
+Write Java program to print all unique element in an array.
+tekrarlanmayan sayilari cap et.
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int [] ages = {9,2,54,8,5,11,2,8};
+        int count = 0;
+        
+        for (int i=0; i<ages.length; i++){
+            
+            for (int a=0; a<ages.length; a++){
+                if (ages[i]==ages[a]){
+                    count++;
+                }
+            }
+            if (count ==1){
+                System.out.println(ages[i]);
+        }
+        count=0;
+        }
+    }
+}
+
+
+
+

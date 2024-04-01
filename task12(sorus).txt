@@ -1,0 +1,27 @@
+serti:
+
+tekrar edilen ededleri cap et.
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int [] ages = {4,6,8,21,4,5,11,8};
+        int count =0;
+        int [] arr = new int[ages.length];
+        
+        
+        for (int i =0; i<ages.length; i++){
+            
+            for(int a=0; a<ages.length; a++){
+                if (ages[i] == ages[a]){
+                    count++;
+                }
+            }
+            if (count>1){
+                System.out.println(ages[i]);
+            }
+            count=0;
+        }
+    }
+}

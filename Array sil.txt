@@ -1,0 +1,21 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int [] ages = {1,2,3,3,4,5};
+        int deleteToIndex = 3;
+        int [] newArray = new int [ages.length -1];
+        
+        for (int i=0; i<newArray.length; i++){
+            if (i<deleteToIndex){
+            newArray [i] = ages [i];
+            }
+            else if (i>=deleteToIndex){
+            newArray [i] = ages [i+1];
+            }
+        }
+        for (int a:newArray){
+            System.out.println(a);
+        }
+    }
+}

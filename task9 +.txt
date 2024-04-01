@@ -1,0 +1,25 @@
+serti :
+
+Verilən array-də ən kiçik 2-ci ədədi tapın.
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int [] ages = {9,2,54,8,5,11};
+        int min = ages[0];
+        int min2 = ages[0];
+        
+        for (int i=0; i<ages.length; i++){
+            if (min>ages[i]){
+                min2 = min;
+                min = ages[i];
+            }
+            else if (min2>ages[i]){
+                min2 = ages[i];
+            }
+        }
+         System.out.println(min2);
+    }
+}
