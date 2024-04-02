@@ -1,0 +1,20 @@
+serti:
+Write java program to copy all elements of one array to another
+Arrayin ellementlerini diger yeni Arraye kopyala
+
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int [] ages = {3,8,5,9,10};
+        int [] newArray = new int [ages.length];
+        
+        for (int i=0; i<ages.length; i++){
+            newArray[i] = ages[i];
+        }
+        for (int a:newArray){
+            System.out.println(a);
+        }
+    }
+}
